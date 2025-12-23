@@ -2193,7 +2193,7 @@
     let minigameCaught = 0;
     let minigameTotalBalls = 50;
     let minigameBasketPosition = 50;
-    const MAX_POTIONS = 2;
+    const MAX_POTIONS = 6;
 
     /**
      * Calcula a porcentagem de dano baseada na diferença de nível
@@ -2979,7 +2979,9 @@ C) F - V - F.
 D) V - V - F.
 E) V - V - V.
 
-EXPLICAÇÃO: Verdadeiro: o quarto nível pode ter até 32 elétrons na teoria, mas na prática até 18 (4s² 4p⁶ 3d¹⁰). Falso: Fe³⁺ é 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵. Verdadeiro: o Fe neutro termina em 4s², sendo o quarto nível o mais energético (último preenchido).
+EXPLICAÇÃO: Primeira assertiva falsa - o quarto nível pode ter até 32 elétrons. Segunda assertiva falsa - Fe³⁺ é 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵. Terceira assertiva verdadeira - o Fe neutro termina em 4s², sendo o quarto nível o mais energético (último preenchido).
+
+GABARITO: A
 
 QUESTÃO 51
 
@@ -3409,6 +3411,7 @@ B) o núcleo produz moléculas que no citoplasma promovem a síntese de enzimas 
 C) o núcleo produz e envia moléculas que catalisam reações metabólicas.
 D) dentro do núcleo, moléculas sintetizam enzimas catalisadoras.
 E) o conteúdo nuclear passa ao citoplasma atuando diretamente nas funções celulares.
+
 EXPLICAÇÃO: O núcleo controla o metabolismo através da transcrição de RNA mensageiro que direciona a síntese de enzimas no citoplasma.
 
 GABARITO: B
@@ -4601,7 +4604,7 @@ GABARITO: B
       if (game.player.potions > 0) {
         potionBtn.disabled = true;
         potionBtn.style.opacity = '0.5';
-        potionBtn.querySelector('small').textContent = `Você tem ${game.player.potions} poção(ões). Use-as primeiro!`;
+        potionBtn.querySelector('small').textContent = `Você já tem 1 ou mais poções!`;
       } else {
         potionBtn.disabled = false;
         potionBtn.style.opacity = '1';
